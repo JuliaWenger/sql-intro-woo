@@ -40,3 +40,11 @@
 -- +-------------------------------+------------------+
 
 
+SELECT name, AVG(wins)
+
+FROM TEAMS
+
+where year >2001
+Group by name
+ORDER by AVG(wins);
+
